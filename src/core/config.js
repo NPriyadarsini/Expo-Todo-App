@@ -1,2 +1,7 @@
-const config={};
+const config={
+  tabs:[
+    { key: 'TodoPane', title: 'TodoPane'},
+    { key: 'TaskPane', title: 'TaskPane' },
+  ]
+};
 export default config;
