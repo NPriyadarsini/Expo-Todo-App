@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
+import TodoPaneFrame from './TodoPaneFrame';
 
-const TodoPaneTab = () => <Text>TodoPane</Text>;
+const TodoPaneTab = () => <TodoPaneFrame/>;
 
 const TaskPaneTab = () => <Text>TaskPane</Text>;
 
