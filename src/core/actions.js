@@ -1,7 +1,5 @@
-import { peek } from "@laufire/utils/debug";
-
 const setIndex=(context)=>({
- index:peek(context.data),
+ index:context.data,
 });
 const actions ={
   setIndex,

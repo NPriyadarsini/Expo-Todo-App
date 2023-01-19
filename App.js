@@ -11,17 +11,10 @@ const App=()=> {
   
   return (
     <SafeAreaProvider>
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-     <HomeScreen {...context}/>
-    </View>
+        <HomeScreen {...context}/>
     </SafeAreaProvider>
   );
 }
  
 export default App;
+
