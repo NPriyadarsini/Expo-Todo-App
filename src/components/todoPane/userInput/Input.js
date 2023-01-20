@@ -19,8 +19,8 @@ const Input = (context) => {
 			role="input"
 			type="text"
 			value={ state.input }
-			onChangeText={ () =>
-				actions.setInput() }
+			onChange={ (evt) =>
+				actions.setInput(evt.target.value) }
 			onKeyPress={ (evt) => {
 				actionKeys[evt.code] && actionKeys[evt.code](context);
 				} }
