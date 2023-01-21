@@ -1,7 +1,6 @@
 import { React } from 'react';
 import { List, Text } from 'react-native-paper';
 
-
 const Todo = (context) => {
 	const { actions, data } = context;
 	const {id,todo } = data;

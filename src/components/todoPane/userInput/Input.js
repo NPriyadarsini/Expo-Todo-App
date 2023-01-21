@@ -1,6 +1,6 @@
 import { TextInput } from "react-native-paper";
 import * as React from 'react';
-import ActionButton from "./ActionButton";
+import { peek } from "@laufire/utils/debug";
 
 const getEnterKeyAction = (context) =>
 	(context.state.editing ? 'editTodo' : 'addTodo');
@@ -22,7 +22,7 @@ const Input = (context) => {
 			onChange={ (evt) =>
 				actions.setInput(evt.target.value) }
 			onKeyPress={ (evt) => {
-				actionKeys[evt.code] && actionKeys[evt.code](context);
+				actionKeys[peek(evt.code)] && actionKeys[evt.code](context);
 				} }
 		/>
 	);
